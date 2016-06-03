@@ -1,0 +1,14 @@
+{
+  "client": {
+    "name": "_HOSTNAME_",
+    "address": "_CLIENT_IPADDRESS_",
+    "environment": "home",
+    "subscriptions": [
+      "_LOCATION_NAME_"
+    ],
+    "socket": {
+      "bind": "127.0.0.1",
+      "port": 3030
+    }
+  }
+}

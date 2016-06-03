@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "check_homeassistant": {
+      "command": "/usr/lib/nagios/plugins/check_tcp -H 192.168.3.201 -p 8123",
+      "interval": 300,
+      "standalone": true
+    }
+  }
+}

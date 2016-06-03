@@ -1,0 +1,4 @@
+SENSU_SERVER="sensu.server"
+UCHIWA_SERVER="12.34.56.78"	
+RABBITMQ_PASSWORD="password"
+LOCATION_NAME="production"

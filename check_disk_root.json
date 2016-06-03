@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "check_disk": {
+      "command": "/usr/lib/nagios/plugins/check_disk / -w 20 -c 10",
+      "interval": 120,
+      "standalone": true
+    }
+  }
+}

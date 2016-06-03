@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "ping_gateway": {
+      "command": "/usr/local/bin/ping_gw.sh",
+      "interval": 30,
+      "standalone": true
+    }
+  }
+}

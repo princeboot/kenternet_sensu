@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "check_uchiwa": {
+      "command": "/usr/lib/nagios/plugins/check_tcp -H _UCHIWA_SERVER_ -p 3000",
+      "interval": 300,
+      "standalone": true
+    }
+  }
+}

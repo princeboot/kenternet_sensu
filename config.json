@@ -1,0 +1,45 @@
+{
+  "rabbitmq": {
+    "host": "_SENSU_SERVER_",
+    "port": 5672,
+    "user": "sensu",
+    "password": "_RABBITMQ_PASSWORD_",
+    "vhost": "/sensu"
+  },
+  "redis": {
+    "host": "_SENSU_SERVER_",
+    "port": 6379
+  },
+  "api": {
+    "host": "_SENSU_SERVER_",
+    "port": 4567
+  },
+  "handlers": {
+    "default": {
+      "type": "set",
+      "handlers": [
+        "stdout"
+      ]
+    },
+    "stdout": {
+      "type": "pipe",
+      "command": "cat"
+    }
+  },
+  "checks": {
+    "test": {
+      "command": "echo -n OK",
+      "subscribers": [
+        "test"
+      ],
+      "interval": 60
+    }
+  },
+  "client": {
+    "name": "localhost",
+    "address": "127.0.0.1",
+    "subscriptions": [
+      "_LOCATION_NAME_"
+    ]
+  }
+}
